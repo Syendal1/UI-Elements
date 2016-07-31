@@ -64,6 +64,9 @@
     [self.view addSubview:segment];
     
     UIStepper *stepper=[[UIStepper alloc]initWithFrame:CGRectMake(50, 560, 250, 40)];
+    stepper.minimumValue=0;
+    stepper.maximumValue=1;
+//    [stepper addTarget:self action:@selector(<#selector#>) forControlEvents:<#(UIControlEvents)#>]
     [self.view addSubview:stepper];
     
 //    UIActivityIndicatorView *actIndicator=[[UIActivityIndicatorView alloc]initWithFrame:CGRectMake(50, 610, 250, 40)];
