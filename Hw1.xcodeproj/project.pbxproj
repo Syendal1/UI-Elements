@@ -14,6 +14,9 @@
 		E39D70481D45E3180047D622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E39D70471D45E3180047D622 /* Assets.xcassets */; };
 		E39D704B1D45E3180047D622 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E39D70491D45E3180047D622 /* LaunchScreen.storyboard */; };
 		E3FAEEFD1D4EB61B0022A809 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAEEFC1D4EB61B0022A809 /* ScrollViewController.m */; };
+		E3FAEF001D4EBD840022A809 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAEEFF1D4EBD840022A809 /* CollectionViewController.m */; };
+		E3FAEF031D4EC23E0022A809 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAEF021D4EC23E0022A809 /* CollectionViewCell.m */; };
+		E3FAEF061D4EDC6E0022A809 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAEF051D4EDC6E0022A809 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		E39D704C1D45E3180047D622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3FAEEFB1D4EB61B0022A809 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		E3FAEEFC1D4EB61B0022A809 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		E3FAEEFE1D4EBD840022A809 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		E3FAEEFF1D4EBD840022A809 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		E3FAEF011D4EC23E0022A809 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		E3FAEF021D4EC23E0022A809 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		E3FAEF041D4EDC6E0022A809 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		E3FAEF051D4EDC6E0022A809 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +75,12 @@
 				E39D70411D45E3180047D622 /* ViewController.h */,
 				E39D70421D45E3180047D622 /* ViewController.m */,
 				E39D70441D45E3180047D622 /* Main.storyboard */,
+				E3FAEF041D4EDC6E0022A809 /* WebViewController.h */,
+				E3FAEF051D4EDC6E0022A809 /* WebViewController.m */,
+				E3FAEEFE1D4EBD840022A809 /* CollectionViewController.h */,
+				E3FAEF011D4EC23E0022A809 /* CollectionViewCell.h */,
+				E3FAEF021D4EC23E0022A809 /* CollectionViewCell.m */,
+				E3FAEEFF1D4EBD840022A809 /* CollectionViewController.m */,
 				E39D70471D45E3180047D622 /* Assets.xcassets */,
 				E3FAEEFB1D4EB61B0022A809 /* ScrollViewController.h */,
 				E3FAEEFC1D4EB61B0022A809 /* ScrollViewController.m */,
@@ -155,9 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3FAEF031D4EC23E0022A809 /* CollectionViewCell.m in Sources */,
+				E3FAEF061D4EDC6E0022A809 /* WebViewController.m in Sources */,
 				E39D70431D45E3180047D622 /* ViewController.m in Sources */,
 				E39D70401D45E3180047D622 /* AppDelegate.m in Sources */,
 				E39D703D1D45E3180047D622 /* main.m in Sources */,
+				E3FAEF001D4EBD840022A809 /* CollectionViewController.m in Sources */,
 				E3FAEEFD1D4EB61B0022A809 /* ScrollViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
