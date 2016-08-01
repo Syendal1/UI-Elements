@@ -17,6 +17,7 @@
 		E3FAEF001D4EBD840022A809 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAEEFF1D4EBD840022A809 /* CollectionViewController.m */; };
 		E3FAEF031D4EC23E0022A809 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAEF021D4EC23E0022A809 /* CollectionViewCell.m */; };
 		E3FAEF061D4EDC6E0022A809 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAEF051D4EDC6E0022A809 /* WebViewController.m */; };
+		E3FAEF091D4EE19A0022A809 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAEF081D4EE19A0022A809 /* PickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		E3FAEF021D4EC23E0022A809 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		E3FAEF041D4EDC6E0022A809 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		E3FAEF051D4EDC6E0022A809 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		E3FAEF071D4EE19A0022A809 /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
+		E3FAEF081D4EE19A0022A809 /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				E39D70411D45E3180047D622 /* ViewController.h */,
 				E39D70421D45E3180047D622 /* ViewController.m */,
 				E39D70441D45E3180047D622 /* Main.storyboard */,
+				E3FAEF071D4EE19A0022A809 /* PickerViewController.h */,
+				E3FAEF081D4EE19A0022A809 /* PickerViewController.m */,
 				E3FAEF041D4EDC6E0022A809 /* WebViewController.h */,
 				E3FAEF051D4EDC6E0022A809 /* WebViewController.m */,
 				E3FAEEFE1D4EBD840022A809 /* CollectionViewController.h */,
@@ -176,6 +181,7 @@
 				E39D70401D45E3180047D622 /* AppDelegate.m in Sources */,
 				E39D703D1D45E3180047D622 /* main.m in Sources */,
 				E3FAEF001D4EBD840022A809 /* CollectionViewController.m in Sources */,
+				E3FAEF091D4EE19A0022A809 /* PickerViewController.m in Sources */,
 				E3FAEEFD1D4EB61B0022A809 /* ScrollViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

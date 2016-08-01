@@ -98,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CVX-XZ-ZI7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="553" y="-243"/>
+            <point key="canvasLocation" x="457" y="-1707"/>
         </scene>
         <!--CollectionView-->
         <scene sceneID="WKP-P2-8SS">
@@ -152,7 +152,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbt-9j-sGN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="231" y="-1797"/>
+            <point key="canvasLocation" x="-1265" y="-1437"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="C45-U8-GTk">
@@ -168,6 +168,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Rn7-uF-oJG"/>
                         <segue destination="16A-pN-1xf" kind="relationship" relationship="viewControllers" id="Edi-n5-BFB"/>
                         <segue destination="3T8-2S-aJ3" kind="relationship" relationship="viewControllers" id="ZaG-KI-RXB"/>
+                        <segue destination="q2S-Do-n9b" kind="relationship" relationship="viewControllers" id="nXQ-2p-j9I"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NPF-cg-z05" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -206,7 +207,69 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8x-WQ-0s4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-198" y="226"/>
+            <point key="canvasLocation" x="1186" y="-1214"/>
+        </scene>
+        <!--PickerView-->
+        <scene sceneID="yrl-zk-f3H">
+            <objects>
+                <viewController id="q2S-Do-n9b" customClass="PickerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="at5-tM-WQb"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Ny-AB-jXn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bDM-d4-sO1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x7p-fl-cGr">
+                                <rect key="frame" x="0.0" y="370" width="600" height="181"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="IU8-Sx-3fm"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="181" id="ldb-1v-iLG"/>
+                                </constraints>
+                            </pickerView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Rg-10-SJs">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="165"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="165" id="9pc-n5-oCf"/>
+                                    <constraint firstAttribute="height" constant="188" id="N2K-AC-pAq"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5i-0e-JlU">
+                                <rect key="frame" x="236" y="268" width="129" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="J4z-m2-Hia"/>
+                                    <constraint firstAttribute="width" constant="129" id="LKV-fU-afX"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="63" id="ogG-Cu-jFR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="x7p-fl-cGr" firstAttribute="leading" secondItem="bDM-d4-sO1" secondAttribute="leading" id="2d5-wG-dEK"/>
+                            <constraint firstItem="T5i-0e-JlU" firstAttribute="centerY" secondItem="bDM-d4-sO1" secondAttribute="centerY" id="3MY-wd-lzx"/>
+                            <constraint firstAttribute="trailing" secondItem="5Rg-10-SJs" secondAttribute="trailing" id="3Np-5k-IgE"/>
+                            <constraint firstItem="5Rg-10-SJs" firstAttribute="top" secondItem="bDM-d4-sO1" secondAttribute="top" id="Esa-w3-Xzx"/>
+                            <constraint firstItem="5Ny-AB-jXn" firstAttribute="top" secondItem="x7p-fl-cGr" secondAttribute="bottom" id="Ey2-0U-pvD"/>
+                            <constraint firstItem="T5i-0e-JlU" firstAttribute="centerX" secondItem="bDM-d4-sO1" secondAttribute="centerX" id="GOA-D0-H3V"/>
+                            <constraint firstItem="5Rg-10-SJs" firstAttribute="leading" secondItem="bDM-d4-sO1" secondAttribute="leading" id="xfD-RL-vXy"/>
+                            <constraint firstAttribute="trailing" secondItem="x7p-fl-cGr" secondAttribute="trailing" id="zGc-Ca-odK"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="PickerView" image="first" id="Q47-F6-zNT" userLabel="PickerView"/>
+                    <connections>
+                        <outlet property="colorLabel" destination="T5i-0e-JlU" id="YSd-ON-NM0"/>
+                        <outlet property="colorPicker" destination="x7p-fl-cGr" id="G8R-JJ-z0T"/>
+                        <outlet property="colorView" destination="5Rg-10-SJs" id="JKK-hk-dhL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="29r-vE-T1v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864" y="-360"/>
         </scene>
         <!--UIElements-->
         <scene sceneID="tne-QT-ifu">
@@ -225,7 +288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="451" y="-1116"/>
+            <point key="canvasLocation" x="-421" y="-1596"/>
         </scene>
     </scenes>
     <resources>
