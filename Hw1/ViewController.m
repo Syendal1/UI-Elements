@@ -56,7 +56,6 @@
     NSArray *arr=@[@"Black",@"Red",@"White"];
     UISegmentedControl *segment=[[UISegmentedControl alloc] initWithItems:arr];
     segment.frame=CGRectMake(50, 510, 250,40);
-    segment.backgroundColor=[UIColor whiteColor];
     segment.tintColor=[UIColor orangeColor];
     segment.layer.cornerRadius=7;
     segment.backgroundColor=[UIColor purpleColor];

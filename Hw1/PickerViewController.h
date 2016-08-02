@@ -9,8 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PickerViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource>
-@property (strong, nonatomic) IBOutlet UIView *colorView;
-@property (strong, nonatomic) IBOutlet UILabel *colorLabel;
-@property (strong, nonatomic) IBOutlet UIPickerView *colorPicker;
 
 @end

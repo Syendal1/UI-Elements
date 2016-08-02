@@ -15,20 +15,27 @@
 @implementation WebViewController
 
 
--(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
-    self=[super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if(self){
-        
-    }
-    return self;
-}
+//-(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
+//    self=[super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+//    if(self){
+//        
+//    }
+//    return self;
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSURL *url=[NSURL URLWithString:@"https://www.google.com/"];
+    UIWebView * webView=[[UIWebView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    [self.view addSubview:webView];
+    
+    NSURL *url=[NSURL URLWithString:@"https://www.youtube.com/"];
     NSURLRequest *request=[NSURLRequest requestWithURL:url];
-    [_webContainer loadRequest:request];
+    
+    [webView loadRequest:request];
+    
+//    [_webContainer loadRequest:request];
+    
     
 }
 

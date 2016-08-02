@@ -11,7 +11,5 @@
 
 @interface WebViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UIWebView *webContainer;
-
 
 @end

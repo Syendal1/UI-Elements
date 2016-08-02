@@ -18,6 +18,12 @@
 		E3FAEF031D4EC23E0022A809 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAEF021D4EC23E0022A809 /* CollectionViewCell.m */; };
 		E3FAEF061D4EDC6E0022A809 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAEF051D4EDC6E0022A809 /* WebViewController.m */; };
 		E3FAEF091D4EE19A0022A809 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAEF081D4EE19A0022A809 /* PickerViewController.m */; };
+		E3FAEF0E1D4FC10D0022A809 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3FAEF0D1D4FC10D0022A809 /* MapKit.framework */; };
+		E3FAEF171D4FD4640022A809 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAEF161D4FD4640022A809 /* MapController.m */; };
+		E3FAEF1A1D4FF1790022A809 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAEF191D4FF1790022A809 /* TextViewController.m */; };
+		E3FAEF1D1D4FFB500022A809 /* ActivityIndicatorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAEF1C1D4FFB500022A809 /* ActivityIndicatorVC.m */; };
+		E3FAEF201D5037C30022A809 /* ScrollViewCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAEF1F1D5037C30022A809 /* ScrollViewCodeController.m */; };
+		E3FAEF231D503A200022A809 /* CollectionCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAEF221D503A200022A809 /* CollectionCodeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +47,17 @@
 		E3FAEF051D4EDC6E0022A809 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		E3FAEF071D4EE19A0022A809 /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
 		E3FAEF081D4EE19A0022A809 /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
+		E3FAEF0D1D4FC10D0022A809 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E3FAEF151D4FD4640022A809 /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
+		E3FAEF161D4FD4640022A809 /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
+		E3FAEF181D4FF1790022A809 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		E3FAEF191D4FF1790022A809 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		E3FAEF1B1D4FFB500022A809 /* ActivityIndicatorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityIndicatorVC.h; sourceTree = "<group>"; };
+		E3FAEF1C1D4FFB500022A809 /* ActivityIndicatorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityIndicatorVC.m; sourceTree = "<group>"; };
+		E3FAEF1E1D5037C30022A809 /* ScrollViewCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewCodeController.h; sourceTree = "<group>"; };
+		E3FAEF1F1D5037C30022A809 /* ScrollViewCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewCodeController.m; sourceTree = "<group>"; };
+		E3FAEF211D503A200022A809 /* CollectionCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCodeViewController.h; sourceTree = "<group>"; };
+		E3FAEF221D503A200022A809 /* CollectionCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCodeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3FAEF0E1D4FC10D0022A809 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +75,7 @@
 		E39D702F1D45E3170047D622 = {
 			isa = PBXGroup;
 			children = (
+				E3FAEF0D1D4FC10D0022A809 /* MapKit.framework */,
 				E39D703A1D45E3180047D622 /* Hw1 */,
 				E39D70391D45E3170047D622 /* Products */,
 			);
@@ -77,15 +96,25 @@
 				E39D703F1D45E3180047D622 /* AppDelegate.m */,
 				E39D70411D45E3180047D622 /* ViewController.h */,
 				E39D70421D45E3180047D622 /* ViewController.m */,
+				E3FAEF151D4FD4640022A809 /* MapController.h */,
+				E3FAEF161D4FD4640022A809 /* MapController.m */,
 				E39D70441D45E3180047D622 /* Main.storyboard */,
+				E3FAEF211D503A200022A809 /* CollectionCodeViewController.h */,
+				E3FAEF221D503A200022A809 /* CollectionCodeViewController.m */,
+				E3FAEF1E1D5037C30022A809 /* ScrollViewCodeController.h */,
+				E3FAEF1F1D5037C30022A809 /* ScrollViewCodeController.m */,
+				E3FAEF1B1D4FFB500022A809 /* ActivityIndicatorVC.h */,
+				E3FAEF1C1D4FFB500022A809 /* ActivityIndicatorVC.m */,
+				E3FAEF181D4FF1790022A809 /* TextViewController.h */,
+				E3FAEF191D4FF1790022A809 /* TextViewController.m */,
 				E3FAEF071D4EE19A0022A809 /* PickerViewController.h */,
 				E3FAEF081D4EE19A0022A809 /* PickerViewController.m */,
 				E3FAEF041D4EDC6E0022A809 /* WebViewController.h */,
 				E3FAEF051D4EDC6E0022A809 /* WebViewController.m */,
 				E3FAEEFE1D4EBD840022A809 /* CollectionViewController.h */,
+				E3FAEEFF1D4EBD840022A809 /* CollectionViewController.m */,
 				E3FAEF011D4EC23E0022A809 /* CollectionViewCell.h */,
 				E3FAEF021D4EC23E0022A809 /* CollectionViewCell.m */,
-				E3FAEEFF1D4EBD840022A809 /* CollectionViewController.m */,
 				E39D70471D45E3180047D622 /* Assets.xcassets */,
 				E3FAEEFB1D4EB61B0022A809 /* ScrollViewController.h */,
 				E3FAEEFC1D4EB61B0022A809 /* ScrollViewController.m */,
@@ -177,11 +206,16 @@
 			files = (
 				E3FAEF031D4EC23E0022A809 /* CollectionViewCell.m in Sources */,
 				E3FAEF061D4EDC6E0022A809 /* WebViewController.m in Sources */,
+				E3FAEF231D503A200022A809 /* CollectionCodeViewController.m in Sources */,
+				E3FAEF171D4FD4640022A809 /* MapController.m in Sources */,
 				E39D70431D45E3180047D622 /* ViewController.m in Sources */,
 				E39D70401D45E3180047D622 /* AppDelegate.m in Sources */,
+				E3FAEF1A1D4FF1790022A809 /* TextViewController.m in Sources */,
+				E3FAEF201D5037C30022A809 /* ScrollViewCodeController.m in Sources */,
 				E39D703D1D45E3180047D622 /* main.m in Sources */,
 				E3FAEF001D4EBD840022A809 /* CollectionViewController.m in Sources */,
 				E3FAEF091D4EE19A0022A809 /* PickerViewController.m in Sources */,
+				E3FAEF1D1D4FFB500022A809 /* ActivityIndicatorVC.m in Sources */,
 				E3FAEEFD1D4EB61B0022A809 /* ScrollViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

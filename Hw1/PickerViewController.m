@@ -8,39 +8,59 @@
 
 #import "PickerViewController.h"
 
-@interface PickerViewController ()
+@interface PickerViewController (){
+    NSArray *pickerViewArray;
+    UILabel *label;
+    UIView *colorView;
+    UIPickerView *pickerView;
+    
+}
 
 @end
 
-NSArray *pickerViewArray;
 
 @implementation PickerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _colorPicker.delegate=self;
-    _colorPicker.dataSource=self;
-    _colorLabel.text=@"Color";
-    _colorView.backgroundColor=[UIColor blackColor];
     
-    pickerViewArray=@[@"Red",@"Blue",@"Orange"];
+    self.view.backgroundColor=[UIColor grayColor];
     
+    colorView=[[UIView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height-300, self.view.frame.size.width, 250)];
+    colorView.backgroundColor=[UIColor blackColor];
+    [self.view addSubview:colorView];
+    
+    label=[[UILabel alloc]initWithFrame:CGRectMake(0, 200, self.view.frame.size.width, 80)];
+    label.text=@"Black";
+    [self.view addSubview:label];
+    
+    pickerView=[[UIPickerView alloc]initWithFrame:CGRectMake(0, 50, self.view.frame.size.width, 100)];
+    [self.view addSubview:pickerView];
+
+    
+    pickerView.delegate=self;
+    pickerView.dataSource=self;
+    
+    pickerViewArray=@[@"Black",@"Red",@"Blue",@"Orange"];
+   
 }
 
-
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-    NSString *colorSelected=[pickerViewArray objectAtIndex:row];
-    _colorLabel.text=colorSelected;
+    NSString *colorPicked=[pickerViewArray objectAtIndex:row];
+    label.text=colorPicked;
+    if([colorPicked isEqualToString:@"Black"]){
+                colorView.backgroundColor=[UIColor blackColor];
+            }
+            if([colorPicked isEqualToString:@"Red"]){
+                colorView.backgroundColor=[UIColor redColor];
+            }
+            if([colorPicked isEqualToString:@"Blue"]){
+                colorView.backgroundColor=[UIColor blueColor];
+            }
+            if([colorPicked isEqualToString:@"Orange"]){
+                colorView.backgroundColor=[UIColor orangeColor];
+            }
     
-    if([colorSelected isEqualToString:@"Red"]){
-        _colorView.backgroundColor=[UIColor redColor];
-    }
-    if([colorSelected isEqualToString:@"Blue"]){
-        _colorView.backgroundColor=[UIColor blueColor];
-    }
-    if([colorSelected isEqualToString:@"Orange"]){
-        _colorView.backgroundColor=[UIColor orangeColor];
-    }
 }
 
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
@@ -58,17 +78,6 @@ NSArray *pickerViewArray;
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
