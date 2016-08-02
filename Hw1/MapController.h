@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #include <MapKit/MapKit.h>
+#include <CoreData/CoreData.h>
 
-@interface MapController : UIViewController<MKMapViewDelegate>
+@interface MapController : UIViewController<MKMapViewDelegate, CLLocationManagerDelegate>
+
+
+@property(nonatomic, retain) IBOutlet MKMapView *mapView;
+@property(nonatomic, retain) CLLocationManager *locationManager;
+
 
 @end

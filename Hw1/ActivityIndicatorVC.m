@@ -8,8 +8,11 @@
 
 #import "ActivityIndicatorVC.h"
 
-@interface ActivityIndicatorVC ()
+@interface ActivityIndicatorVC (){
 
+    UIView *myView;
+    UIActivityIndicatorView *activityInd;
+}
 @end
 
 @implementation ActivityIndicatorVC
@@ -18,13 +21,25 @@
     [super viewDidLoad];
     
     
+    self.view.backgroundColor=[UIColor redColor];
     
     
-    UIView *myView=[[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    myView=[[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     [self.view addSubview:myView];
+    myView.backgroundColor=[UIColor orangeColor];
     
-    UIActivityIndicatorView *activityInd=[[UIActivityIndicatorView alloc]init];
+    activityInd=[[UIActivityIndicatorView alloc]initWithFrame:CGRectMake(100, 150, 50, 50)];
+    [myView addSubview:activityInd];
+    [activityInd startAnimating];
+    
+    [self performSelector:@selector(callThisMethod) withObject:nil afterDelay:5.0];
 
+}
+
+-(void)callThisMethod{
+    [activityInd stopAnimating];
+    myView.hidden=true;
+    
 }
 
 - (void)didReceiveMemoryWarning {

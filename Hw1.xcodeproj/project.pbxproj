@@ -24,6 +24,7 @@
 		E3FAEF1D1D4FFB500022A809 /* ActivityIndicatorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAEF1C1D4FFB500022A809 /* ActivityIndicatorVC.m */; };
 		E3FAEF201D5037C30022A809 /* ScrollViewCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAEF1F1D5037C30022A809 /* ScrollViewCodeController.m */; };
 		E3FAEF231D503A200022A809 /* CollectionCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FAEF221D503A200022A809 /* CollectionCodeViewController.m */; };
+		E3FAEF251D510B690022A809 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3FAEF241D510B690022A809 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		E3FAEF1F1D5037C30022A809 /* ScrollViewCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewCodeController.m; sourceTree = "<group>"; };
 		E3FAEF211D503A200022A809 /* CollectionCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCodeViewController.h; sourceTree = "<group>"; };
 		E3FAEF221D503A200022A809 /* CollectionCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCodeViewController.m; sourceTree = "<group>"; };
+		E3FAEF241D510B690022A809 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3FAEF251D510B690022A809 /* CoreData.framework in Frameworks */,
 				E3FAEF0E1D4FC10D0022A809 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +78,7 @@
 		E39D702F1D45E3170047D622 = {
 			isa = PBXGroup;
 			children = (
+				E3FAEF241D510B690022A809 /* CoreData.framework */,
 				E3FAEF0D1D4FC10D0022A809 /* MapKit.framework */,
 				E39D703A1D45E3180047D622 /* Hw1 */,
 				E39D70391D45E3170047D622 /* Products */,

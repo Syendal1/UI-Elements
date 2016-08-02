@@ -43,5 +43,7 @@
 	</array>
 	<key>NSLocationWhenInUsageDescription</key>
 	<string>Please give Permission</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Please give Permi</string>
 </dict>
 </plist>
